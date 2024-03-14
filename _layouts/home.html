@@ -1,13 +1,25 @@
 ---
 layout: default
 ---
-<header>
-  <h1>{{ site.title }}</h1>
-  {%-if site.theme_config.show_description-%}
-    <p>{{ site.description }}</p>
-  {%-endif-%}
-</header>
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: "en" }}">
+  <head>
+    {%- include head.html -%}
 
-{%-include menu_item.html collection=site.data.menu.entries-%}
+    <style>
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        background-image: url("/assets/img/IMG_8987.jpg");
+        }
 
-{{ content }}
+        main {
+          flex: 1 0 auto;
+        }
+    </style>
+  </head>
+
+<div class="valign-wrapper center-align tallbox">
+    {{ content }}
+</div>

@@ -1,26 +1,55 @@
-<ul>
-  {%-for item in include.collection-%}
+<div class="navbar-fixed">
+  <nav class="transparent z-depth-0">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">
+        <img src="/assets/img/android-chrome-192x192.png" alt="{{ site.title }}">
+      </a>
+      <a href="#" data-target="slide-out" class="sidenav-trigger right">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        {%-for item in include.collection-%}
+      <li>
+      {%- if item.url -%}
+        <a href="{{ item.url }}">{{ item.title }}</a>
+      {%- else -%}
+        {{ item.title }}
+      {%- endif -%}
+      </li>
+
+      {%-if item.post_list-%}
+        {%
+          include post_list.html
+            category=item.post_list.category
+            limit=item.post_list.limit
+            show_more=item.post_list.show_more
+            show_more_text=item.post_list.show_more_text
+            show_more_url=item.post_list.show_more_url
+      -%}
+      {%-endif-%}
+
+      {%-if item.entries-%}
+        {%-include menu_item.html collection=item.entries-%}
+      {%-endif-%}
+    {%-endfor-%}
+      </ul>
+    </div>
+  </nav>
+
+  <ul id="slide-out" class="sidenav">
+    {%-for item in include.collection-%}
     <li>
-    {%- if item.url -%}
-      <a href="{{ item.url }}">{{ item.title }}</a>
-    {%- else -%}
-      {{ item.title }}
-    {%- endif -%}
+      {%- if item.url -%}
+        <a href="{{ item.url }}">{{ item.title }}</a>
+      {%- else -%}
+        {{ item.title }}
+      {%- endif -%}
     </li>
+    {%-endfor-%}
+  </ul>
 
-    {%-if item.post_list-%}
-      {%
-        include post_list.html
-          category=item.post_list.category
-          limit=item.post_list.limit
-          show_more=item.post_list.show_more
-          show_more_text=item.post_list.show_more_text
-          show_more_url=item.post_list.show_more_url
-     -%}
-    {%-endif-%}
 
-    {%-if item.entries-%}
-      {%-include menu_item.html collection=item.entries-%}
-    {%-endif-%}
-  {%-endfor-%}
-</ul>
+</div>
+
+
+      
