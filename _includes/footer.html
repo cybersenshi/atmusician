@@ -3,17 +3,17 @@
         <div class="row socialbox">
             <ul class="socialico">
                 <li>
-                    <a href="" class="waves-effect waves-light btn-large z-depth-0 transparent">
+                    <a href="https://www.facebook.com/{{ site.facebook }}" class="waves-effect waves-light btn-large z-depth-0 transparent">
                         <i class="fa-brands fa-square-facebook"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="" class="waves-effect waves-light btn-large z-depth-0 transparent">
+                    <a href="https://www.instagram.com/{{ site.instagram }}" class="waves-effect waves-light btn-large z-depth-0 transparent">
                         <i class="fa-brands fa-square-instagram"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="" class="waves-effect waves-light btn-large z-depth-0 transparent">
+                    <a href="https://www.youtube.com/channel/{{ site.youtube }}" class="waves-effect waves-light btn-large z-depth-0 transparent">
                         <i class="fa-brands fa-youtube"></i>
                     </a>
                 </li>
@@ -30,7 +30,9 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script>
     $(document).ready(function(){
-    $('.sidenav').sidenav('edge', 'right');
+        $('.sidenav').sidenav({
+            edge: 'right'
+        });
   });
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
