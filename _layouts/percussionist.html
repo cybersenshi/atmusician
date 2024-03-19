@@ -1,0 +1,22 @@
+---
+layout: page
+---
+
+  <head>
+    {%- include head.html -%}
+
+    <style>
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        background-image: url("{{ site.baseurl }}/assets/img/IMG_8825.jpg");
+        }
+
+        main {
+          flex: 1 0 auto;
+        }
+    </style>
+  </head>
+
+  {{ content }}
