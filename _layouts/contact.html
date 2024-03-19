@@ -1,0 +1,30 @@
+---
+layout: page
+---
+
+  {{ content }}
+
+  <div class="row">
+    <form class="col s12" action="https://formspree.io/f/{form_id}" method="post">
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fa-solid fa-user prefix"></i>
+                <input id="name" type="text" class="validate">
+                <label for="name">Name</label>
+            </div>
+            <div class="input-field col s12">
+                <i class="fa-solid fa-envelope prefix"></i>
+                <input id="email" type="text" class="validate">
+                <label for="email">Email</label>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="textarea1" class="materialize-textarea"></textarea>
+                  <label for="textarea1">Message</label>
+            </div>
+            <button class="waves-effect waves-light btn-large">
+                Send
+            </button>
+        </div>
+      </form>
+  </div>
