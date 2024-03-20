@@ -3,14 +3,14 @@
 
 entries:
   - title: Drummer
-    url: atmusician/drummer
+    url: drummer
   - title: Percussionist
-    url: atmusician/percussionist
+    url: percussionist
   - title: Singer/Songwriter
     url: https://aarontaylormusic.com
   - title: Discography
     url: /
   - title: About
-    url: atmusician/about
+    url: about
   - title: Contact
-    url: atmusician/contact
+    url: contact
