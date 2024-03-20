@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "Noto Serif", serif;
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-variant: small-caps;
+}
+
+.sidenav-overlay {
+  z-index: 100;
+}
+
+.container {
+  width: 90%;
+}
+
+.tallbox {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+}
+
+.bumpbox {
+  margin-top: 40vh;
+  margin-bottom: 2vh;
+  padding-left: 5%;
+  padding-bottom: 5%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.socialbox {
+  padding: 6px;
+  margin: 0;
+}
+
+.socialico {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+dl {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+dt {
+  flex-basis: 20%;
+  font-family: "Raleway", sans-serif;
+  font-variant: small-caps;
+  font-size: larger;
+}
+
+dd {
+  flex-basis: 70%;
+  flex-grow: 1;
+}
+
+/*# sourceMappingURL=main.css.map */
