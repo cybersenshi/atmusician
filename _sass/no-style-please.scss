@@ -59,6 +59,10 @@ h1 {
   justify-content: center;
 }
 
+.prefix.active {
+  color: darkgrey;
+}
+
 dl {
   display: flex;
   flex-flow: column wrap;
