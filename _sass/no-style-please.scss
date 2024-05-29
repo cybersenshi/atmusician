@@ -113,7 +113,6 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label, textarea.mat
 
 input[type=text]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
   border-bottom: 1px solid white;
-  -webkit-box-shadow: 0 1px 0 0 white;
   box-shadow: 0 1px 0 0 white;
 }
 
