@@ -1,28 +1,11 @@
 ---
 layout: page
 ---
-
-<head>
-    {%- include head.html -%}
-
-    <style>
-      body {
-        display: flex;
-        min-height: 100vh;
-        flex-direction: column;
-        background-image: url("{{ site.baseurl }}/assets/img/IMG_8825.jpg");
-        }
-
-        main {
-          flex: 1 0 auto;
-        }
-    </style>
-  </head>
   
   {{ content }}
 
   <div class="row">
-    <form class="col s12" action="https://formspree.io/f/{form_id}" method="post">
+    <form class="col s12" action="https://formspree.io/f/xwkgjggd" method="post">
         <div class="row">
             <div class="input-field col s12">
                 <i class="fa-solid fa-user prefix"></i>
@@ -39,8 +22,8 @@ layout: page
                   <textarea id="textarea1" class="materialize-textarea"></textarea>
                   <label for="textarea1">Message</label>
             </div>
-            <button class="waves-effect waves-light btn-large white">
-                <span class="black">
+            <button type="submit" class="waves-effect waves-light btn-large white">
+                <span class="buttoncolor">
                   Send
                 </span>
             </button>
