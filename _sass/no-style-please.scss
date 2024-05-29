@@ -103,6 +103,14 @@ dd {
   height: 100%;
 }
 
+.input-field .prefix.active {
+  color: white;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly])+label {
+  color: white;
+}
+
 input[type=text]:not(.browser-default):focus:not([readonly]) {
   border-bottom: 1px solid white;
   -webkit-box-shadow: 0 1px 0 0 white;
